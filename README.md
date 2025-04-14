@@ -1,65 +1,40 @@
-Here is the complete, polished `README.md` with the citation and all sections properly structured and finalized:
-
----
-
-```markdown
-# A Time-varying Information Measure for Tracking Dynamics of Neural Codes in a Neural Ensemble
+# A Time-Varying Information Measure for Tracking Dynamics of Neural Codes in a Neural Ensemble
 
 This repository contains the MATLAB code accompanying the paper:
 
-**[A Time-Varying Information Measure for Tracking Dynamics of Neural Codes in a Neural Ensemble](https://www.mdpi.com/1099-4300/22/8/880)**  
-*Mohammad R. Rezaei, Milos R. Popovic, Milad Lankarany*  
-Published in *Entropy*, 2020.
+**"A Time-Varying Information Measure for Tracking Dynamics of Neural Codes in a Neural Ensemble"**  
+by *Mohammadreza Rezaei, Milos R. Popovic, and Milad Lankarany*  
+Published in *Entropy*, 2020.  
+📄 [Read the paper](https://www.mdpi.com/1099-4300/22/8/880)
 
 ---
 
-## 🧠 Overview
+## Overview
 
-The amount of information carried by differentially correlated spikes in a neural ensemble varies depending on their synchrony. Spikes of different types (synchronous vs. asynchronous) are associated with different stimulus features. 
+The amount of information carried by spikes in a neural ensemble depends on their correlation structure. Synchronous and asynchronous spikes convey different aspects of the stimulus and have distinct entropy characteristics.
 
-In this work, we propose a **Time-Varying Entropy (TVE)** measure that quantifies how neural codes evolve over time within an ensemble of neurons. Key findings include:
-- **Synchronous and asynchronous spikes** exhibit different entropy profiles and are distinguishable in their probability distributions.
-- These spikes encode **different features of the stimulus**, with synchronous spikes reflecting fast components and asynchronous spikes capturing slower variations.
-- **TVE** effectively tracks these coding dynamics.
-- A **Kalman filter-based decoder** is developed to reconstruct the stimulus, showing that different features of the input signal can be decoded by focusing on different spike types.
+In this work, we:
 
----
-
-## 🚀 Usage
-
-### Requirements
-- MATLAB (tested on R2018b and later)
-- Signal Processing Toolbox
-- Statistics and Machine Learning Toolbox
-
-### How to Run
-To reproduce the main results:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MrRezaeiUofT/A-Time-varying-Information-Measure-for-Tracking-Dynamics-of-Neural-Codes-in-a-Neural-Ensemble.git
-   ```
-
-2. Open MATLAB and navigate to the `Code` directory.
-
-3. Run the main script:
-   ```matlab
-   MainSolution
-   ```
-
-This will execute the full pipeline including spike generation, entropy calculation, and stimulus reconstruction.
+- Introduce a **Time-Varying Entropy (TVE)** measure to quantify how information evolves over time in neural populations.
+- Apply TVE to a mixed stimulus (slow and fast signals) and demonstrate that synchronous and asynchronous spikes exhibit separable entropy profiles.
+- Show that different spike types encode complementary information across different timescales.
+- Develop a **Kalman filter-based decoder** to reconstruct stimuli from spike trains.
+- Demonstrate that slow and fast components of the stimulus can be reconstructed using asynchronous and synchronous spikes, respectively.
 
 ---
 
-## 📊 Reproducing Results
+## Usage
 
-Scripts for reproducing main figures from the paper can be found in the `Figures/` folder. Paths may need to be updated to point to the appropriate `Data/` and `Results/` folders.
+To run the simulation:
+
+1. Open `MainSolution.m` in MATLAB.
+2. Execute the script to reproduce the figures and analysis from the paper.
 
 ---
 
-## 📄 Citation
+## Citation
 
-If you use this code in your work, please cite the following:
+If you use this code or reference this work in your research, please cite:
 
 ```bibtex
 @article{rezaei2020time,
@@ -72,27 +47,3 @@ If you use this code in your work, please cite the following:
   year={2020},
   publisher={MDPI}
 }
-```
-
-📄 [Read the Paper](https://www.mdpi.com/1099-4300/22/8/880)
-
----
-
-## 👨‍🔬 Authors
-
-- **Mohammad R. Rezaei** – [GitHub Profile](https://github.com/MrRezaeiUofT)
-- **Milos R. Popovic**
-- **Milad Lankarany**
-
-For questions or collaborations, feel free to reach out to [mr.rezaei@mail.utoronto.ca](mailto:mr.rezaei@mail.utoronto.ca)
-
----
-
-## 📜 License
-
-This project is released under the [MIT License](LICENSE). Feel free to use and adapt for academic and research purposes.
-```
-
----
-
-Let me know if you'd like to also include visual examples (e.g. figure previews) or a `LICENSE` file to go with it.
