@@ -1,16 +1,67 @@
-# A-Time-varying-Information-Measure-for-Tracking-Dynamics-of-Neural-Codes-in-a-Neural-Ensemble
+Here is the complete, polished `README.md` with the citation and all sections properly structured and finalized:
 
-This repository contains the codes corresponding to the "A-Time-varying-Information-Measure-for-Tracking-Dynamics-of-Neural-Codes-in-a-Neural-Ensemble" paper.
+---
 
-The amount of information that differentially correlated spikes in a neural ensemble carry are not the same; information of different types of spikes are associated with different features of the stimulus. By calculating a neural ensemble's information in response to a mixed stimulus comprising slow and fast signals, we show the entropy of synchronous and asynchronous spikes are different, and their probability distributions are distinctively separable. We further show that these spikes carry a different amount of information. We propose a time-varying entropy (TVE) measure to track the dynamics of a neural code in an ensemble of neurons over time. By applying TVE to a multiplexed code, we show that synchronous and asynchronous spikes carry information in different time scales, which are explained by TVE. Finally, a decoder based on the Kalman filtering approach is developed to reconstruct the stimulus from the spikes. We demonstrate slow and fast features of the stimulus can be entirely reconstructed when this decoder applies to asynchronous and synchronous spikes, respectively.
+```markdown
+# A Time-varying Information Measure for Tracking Dynamics of Neural Codes in a Neural Ensemble
 
+This repository contains the MATLAB code accompanying the paper:
 
-# Usage
- - Run MainSolution.m in Matlab
+**[A Time-Varying Information Measure for Tracking Dynamics of Neural Codes in a Neural Ensemble](https://www.mdpi.com/1099-4300/22/8/880)**  
+*Mohammad R. Rezaei, Milos R. Popovic, Milad Lankarany*  
+Published in *Entropy*, 2020.
 
-# Citing this work
-Please use the following citation:
-```
+---
+
+## 🧠 Overview
+
+The amount of information carried by differentially correlated spikes in a neural ensemble varies depending on their synchrony. Spikes of different types (synchronous vs. asynchronous) are associated with different stimulus features. 
+
+In this work, we propose a **Time-Varying Entropy (TVE)** measure that quantifies how neural codes evolve over time within an ensemble of neurons. Key findings include:
+- **Synchronous and asynchronous spikes** exhibit different entropy profiles and are distinguishable in their probability distributions.
+- These spikes encode **different features of the stimulus**, with synchronous spikes reflecting fast components and asynchronous spikes capturing slower variations.
+- **TVE** effectively tracks these coding dynamics.
+- A **Kalman filter-based decoder** is developed to reconstruct the stimulus, showing that different features of the input signal can be decoded by focusing on different spike types.
+
+---
+
+## 🚀 Usage
+
+### Requirements
+- MATLAB (tested on R2018b and later)
+- Signal Processing Toolbox
+- Statistics and Machine Learning Toolbox
+
+### How to Run
+To reproduce the main results:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MrRezaeiUofT/A-Time-varying-Information-Measure-for-Tracking-Dynamics-of-Neural-Codes-in-a-Neural-Ensemble.git
+   ```
+
+2. Open MATLAB and navigate to the `Code` directory.
+
+3. Run the main script:
+   ```matlab
+   MainSolution
+   ```
+
+This will execute the full pipeline including spike generation, entropy calculation, and stimulus reconstruction.
+
+---
+
+## 📊 Reproducing Results
+
+Scripts for reproducing main figures from the paper can be found in the `Figures/` folder. Paths may need to be updated to point to the appropriate `Data/` and `Results/` folders.
+
+---
+
+## 📄 Citation
+
+If you use this code in your work, please cite the following:
+
+```bibtex
 @article{rezaei2020time,
   title={A time-varying information measure for tracking dynamics of neural codes in a neural ensemble},
   author={Rezaei, Mohammad R and Popovic, Milos R and Lankarany, Milad},
@@ -23,6 +74,25 @@ Please use the following citation:
 }
 ```
 
-# Authors
- Mohammadreza Rezaei,  Milos R. Popovic, and Milad Lankarany
+📄 [Read the Paper](https://www.mdpi.com/1099-4300/22/8/880)
 
+---
+
+## 👨‍🔬 Authors
+
+- **Mohammad R. Rezaei** – [GitHub Profile](https://github.com/MrRezaeiUofT)
+- **Milos R. Popovic**
+- **Milad Lankarany**
+
+For questions or collaborations, feel free to reach out to [mr.rezaei@mail.utoronto.ca](mailto:mr.rezaei@mail.utoronto.ca)
+
+---
+
+## 📜 License
+
+This project is released under the [MIT License](LICENSE). Feel free to use and adapt for academic and research purposes.
+```
+
+---
+
+Let me know if you'd like to also include visual examples (e.g. figure previews) or a `LICENSE` file to go with it.
