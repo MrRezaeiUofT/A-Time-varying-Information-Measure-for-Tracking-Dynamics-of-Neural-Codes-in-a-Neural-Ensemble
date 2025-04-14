@@ -11,7 +11,16 @@ The amount of information that differentially correlated spikes in a neural ense
 # Citing this work
 Please use the following citation:
 ```
-
+@article{rezaei2020time,
+  title={A time-varying information measure for tracking dynamics of neural codes in a neural ensemble},
+  author={Rezaei, Mohammad R and Popovic, Milos R and Lankarany, Milad},
+  journal={Entropy},
+  volume={22},
+  number={8},
+  pages={880},
+  year={2020},
+  publisher={MDPI}
+}
 ```
 
 # Authors
